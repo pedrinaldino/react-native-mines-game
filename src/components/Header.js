@@ -5,14 +5,14 @@ import {
   Text,
   TouchableOpacity
 } from 'react-native'
-import Mine from './Mine'
+import Flag from './Flag'
 
 export default props => {
   return(
     <View style={styles.container}>
       <View style={styles.flagContainer}>
         <View onPress={props.onFlagPress} style={styles.flagButton}>
-          <Mine/>
+          <Flag bigger/>
         </View>
         <Text style={styles.flagsLeft}>= {props.flagsLeft}</Text>
       </View>

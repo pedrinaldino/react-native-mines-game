@@ -6,9 +6,10 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 export default props => {
+  const size = props.bigger ? 30 : 20
   return (
     <View style={styles.container}>
-      <Icon name='flag' size={20} color='#F22'/>
+      <Icon name='flag' size={size} color='#F22'/>
     </View>
   )
 }

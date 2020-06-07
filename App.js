@@ -79,6 +79,11 @@ class App extends Component {
     this.setState(this.createState())
   }
 
+  flagsLeft = () => {
+    let flagsLeft = this.minesAmount() - flagsUsed(this.state.board)
+    return Math.max(flagsLeft, 0)
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -93,7 +98,7 @@ class App extends Component {
             onSelectField={this.onSelectField}/>
         </View>
         <Header 
-          flagsLeft={this.minesAmount() - flagsUsed(this.state.board)}
+          flagsLeft={this.flagsLeft()}
           onNewGame={() => this.setState({ showLevelSelection: true})}
         />
       </View>
