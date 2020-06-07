@@ -26,27 +26,27 @@ export default props => {
           </TouchableOpacity>
           <TouchableOpacity 
             style={[styles.button, styles.bgNormal]}
-            onPress={() => props.onLevelSelected(0.15)}
+            onPress={() => props.onLevelSelected(0.14)}
           >
             <Text style={styles.buttonLabel}>Intermediário</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             style={[styles.button, styles.bgHard]}
-            onPress={() => props.onLevelSelected(0.20)}
+            onPress={() => props.onLevelSelected(0.18)}
           >
             <Text style={styles.buttonLabel}>Difícil</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             style={[styles.button, styles.bgExpert]}
-            onPress={() => props.onLevelSelected(0.25)}
+            onPress={() => props.onLevelSelected(0.22)}
           >
             <Text style={styles.buttonLabel}>Perito</Text>
           </TouchableOpacity>
           <TouchableOpacity 
             style={[styles.button, styles.bgInsane]}
-            onPress={() => props.onLevelSelected(0.30)}
+            onPress={() => props.onLevelSelected(0.26)}
           >
-            <Text style={styles.buttonLabel}>Insano</Text>
+            <Text style={styles.buttonLabel}>2020</Text>
           </TouchableOpacity>
         </View>
       </View>

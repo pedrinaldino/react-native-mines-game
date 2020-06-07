@@ -87,16 +87,15 @@ class App extends Component {
           onLevelSelected={this.onLevelSelected}
           onCancel={() => this.setState({ showLevelSelection: false })}
         />
-        <Header 
-          flagsLeft={this.minesAmount() - flagsUsed(this.state.board)}
-          onNewGame={() => this.setState(this.createState())}
-          onFlagPress={() => this.setState({ showLevelSelection: true})}
-        />
         <View style={styles.board}>
           <MineField board={this.state.board} 
             onOpenField={this.onOpenField}
             onSelectField={this.onSelectField}/>
         </View>
+        <Header 
+          flagsLeft={this.minesAmount() - flagsUsed(this.state.board)}
+          onNewGame={() => this.setState({ showLevelSelection: true})}
+        />
       </View>
     )
   }
@@ -109,7 +108,8 @@ const styles = StyleSheet.create({
   },
   board: {
     alignItems: 'center',
-    backgroundColor: '#AAA'
+    backgroundColor: '#AAA',
+    paddingVertical: 10
   }
 })
 

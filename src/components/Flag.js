@@ -3,21 +3,21 @@ import {
   View,
   StyleSheet
 } from 'react-native'
+import Icon from 'react-native-vector-icons/FontAwesome'
 
 export default props => {
   return (
     <View style={styles.container}>
-      <View style={[styles.flagpole, props.bigger ? styles.flagpoleBigger : false]}/>
-      <View style={[styles.flag, props.bigger ? styles.flagBigger : false]}/>
-      <View style={[styles.base1, props.bigger ? styles.base1Bigger : false]}/>
-      <View style={[styles.base2, props.bigger ? styles.base2Bigger : false]}/>
+      <Icon name='flag' size={20} color='#F22'/>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 2
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   flagpole: {
     position: 'absolute',
